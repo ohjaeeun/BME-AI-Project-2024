@@ -23,7 +23,7 @@ https://colab.research.google.com/drive/1EnUqNLi9zFixI8RZAbJqsnrVQ2ncqHaE?usp=sh
 https://colab.research.google.com/drive/12bVquFnzTCrBCKI9R6CvhM_kTAb-zFl4?usp=sharing
 
 2. Dataset을 다운 받아 Colab에서 실행한다.
--  data
+-  audio data
 https://www.kaggle.com/datasets/debasisdotcom/parkinson-disease-detection/data
 
 - Image data

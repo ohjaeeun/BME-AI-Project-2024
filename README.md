@@ -44,9 +44,18 @@
 ## Result
 Validation Loss: 0.59 / Validation Accuracy: 0.77
 
+## Evaluation
+![image](https://github.com/user-attachments/assets/08edaef2-7f16-4c02-849c-2df925de908d)
+
+
+
 ## Test
+- 팀원 1명의 손그림 + 녹음된 voice의 feature 추출
+![image](https://github.com/user-attachments/assets/2e885574-844f-4f39-b808-b4153c9efe39)
+![image](https://github.com/user-attachments/assets/d725c438-32ad-46b0-884a-bf1b62fd20b4)
+- 예측 결과
 ![image](https://github.com/user-attachments/assets/89651e48-2138-4670-b6f2-046eb149d935)
-- 손그림 + 녹음된 voice의 feature 추출
+
 
 ## 실행방법
 

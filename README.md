@@ -8,15 +8,45 @@
 - 두 종류의 데이터를 input으로 하여 실생활에서 파킨슨 질환일 확률을 예측하여 조기 진단을 보조할 수 있는 인공지능 모델을 개발하고자 하였습니다.
 - 여러 요소들로부터 해당 질환일 확률을 판별하고자 하는 목적으로 특정 상황이 아닌 다양한 상황에서도 모델의 일반화 능력을 가질 수 있도록 하였습니다. 
 
-## 파일 목록
-
 ## Dataset
-- Audio data https://www.kaggle.com/datasets/debasisdotcom/parkinson-disease-detection/data
+- Audio data https://www.kaggle.com/datasets/debasisdotcom/parkinson-disease-detection/data 
+   * total 197 data
+   * MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz), MDVP:Jitter, MDVP:Shimmer 등의 column
+   * label - healty: 0 (50), parkinson's positive: 1 (147)
+
 - Image data https://www.kaggle.com/datasets/banilkumar20phd7071/handwritten-parkinsons-disease-augmented-data
-
+  * original data: total 204 images
+  * aumented data: total 3264 images
+  * 2-classes of healthy and parkinson's positive
+  
 ## Algorithm
-
+- Multi Modal Deep Larning (Late Fusion)
+  ![image](https://github.com/user-attachments/assets/21e20797-83cc-461b-ad03-b9c93d02ba7b)
+  - Input data
+    - audio data (csv), drawing data (image)
+  - Output
+    - Predicted parkinson probability
+  
 ## Model
+- Model 1 + Model 2 -> Late Fusion 
+![image](https://github.com/user-attachments/assets/67581fb1-6b6a-401a-84e1-577694a728ac)
+- Parameters
+  - Learning rate = 0.0001
+  - batch size = 32
+  - Epoch number = 70
+  - Loss function = categorical crossentropy
+  - Optimizer = Adam
+   
+- 음성 입력: Dense 레이어를 통해 음성 주파수 데이터를 처리
+- 이미지 입력: EfficientNetB0을 사용하여 이미지 데이터를 처리
+- 결합: 두 입력의 출력을 결합 → 0.5 이하: 정상 / 0.5 이상: 파킨슨병 환자
+
+## Result
+Validation Loss: 0.59 / Validation Accuracy: 0.77
+
+## Test
+![image](https://github.com/user-attachments/assets/89651e48-2138-4670-b6f2-046eb149d935)
+- 손그림 + 녹음된 voice의 feature 추출
 
 ## 실행방법
 

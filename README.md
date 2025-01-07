@@ -21,7 +21,7 @@
   
 ## Algorithm
 - Multi Modal Deep Larning (Late Fusion)
-  ![image](https://github.com/user-attachments/assets/21e20797-83cc-461b-ad03-b9c93d02ba7b)
+>  ![image](https://github.com/user-attachments/assets/21e20797-83cc-461b-ad03-b9c93d02ba7b)
   - Input data
     - audio data (csv), drawing data (image)
   - Output
@@ -51,10 +51,10 @@ Validation Loss: 0.59 / Validation Accuracy: 0.77
 
 ## Test
 - 팀원 1명의 손그림 + 녹음된 voice의 feature 추출
-![image](https://github.com/user-attachments/assets/2e885574-844f-4f39-b808-b4153c9efe39)
-![image](https://github.com/user-attachments/assets/d725c438-32ad-46b0-884a-bf1b62fd20b4)
+ >  ![image](https://github.com/user-attachments/assets/2e885574-844f-4f39-b808-b4153c9efe39)
+ >  ![image](https://github.com/user-attachments/assets/d725c438-32ad-46b0-884a-bf1b62fd20b4)
 - 예측 결과
-![image](https://github.com/user-attachments/assets/89651e48-2138-4670-b6f2-046eb149d935)
+> ![image](https://github.com/user-attachments/assets/89651e48-2138-4670-b6f2-046eb149d935)
 
 
 ## 실행방법

@@ -1,5 +1,5 @@
 # Parkinson Disease Prediction Multimodal Model
-[24-1 HUFS BME 의료영상처리 이론 및 실습] \
+[24-1 HUFS BME 인공지능] \
 **team member** : 곽준무, 양아연, 오재은, 이근혜
 
 - 이 프로젝트는 `Multi Modal Deep Learning을 활용한 Parkinson's disease Prediction Model`을 생성하는 프로젝트입니다.
